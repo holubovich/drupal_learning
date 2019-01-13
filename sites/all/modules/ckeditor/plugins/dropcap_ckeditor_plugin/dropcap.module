@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Module dropcap file.
+ */
+
+/**
+ * Hook to register the CKEditor plugin.
+ */
+function dropcap_ckeditor_plugin() {
+  return array(
+    'widgetdropcap' => array(
+      // Name of the plugin used to write it.
+      'name' => 'widgetdropcap',
+      // Description of the plugin - it would be displayed in the plugins
+      // management section of profile settings.
+      'desc' => t('Plugin to add dropcap widgets'),
+      // The full path to the CKEditor plugins directory, with the trailing
+      // slash.
+      'path' => drupal_get_path('module', 'dropcap') . '/plugins/widgetdropcap/',
+      'buttons' => array(
+        'widgetdropcap' => array(
+          'icon' => 'icons/widgetdropcap.png',
+          'label' => 'Insert dropcap',
+        ),
+      ),
+    ),
+  );
+}

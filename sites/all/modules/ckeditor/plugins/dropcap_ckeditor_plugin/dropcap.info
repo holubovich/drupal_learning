@@ -1,0 +1,11 @@
+name = dropcap
+description = This module extend ckeditor plugin to insert dropcap.
+core = 7.x
+dependencies[] = ckeditor
+
+; Information added by Drupal.org packaging script on 2017-04-28
+version = "7.x-1.1"
+core = "7.x"
+project = "dropcap_ckeditor_plugin"
+datestamp = "1493375224"
+
